@@ -104,6 +104,11 @@ public class FormLogin extends javax.swing.JFrame {
 
         btnFinalizar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnFinalizar.setText("Finalizar");
+        btnFinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFinalizarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,6 +152,10 @@ public class FormLogin extends javax.swing.JFrame {
             pesquisar();
         }
     }//GEN-LAST:event_txtSenhaKeyPressed
+
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnFinalizarActionPerformed
 
     private void pesquisar() {
         String login = txtLogin.getText();
